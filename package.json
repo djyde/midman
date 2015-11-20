@@ -15,12 +15,8 @@
   "bugs": {
     "url": "https://github.com/djyde/midman/issues"
   },
-  "bin": {
-    "midman": "./bin/midman"
-  },
   "homepage": "https://github.com/djyde/midman#readme",
   "dependencies": {
-    "commander": "^2.9.0",
     "express": "^4.13.3",
     "jade": "^1.11.0"
   }
