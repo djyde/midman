@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+const express = require('express')
+const app = express()
+
+const midman = require('commander')
+
+midman
+  .version(require('../package.json').version)
+  .parse(process.argv)
