@@ -10,7 +10,10 @@ midman
 // commands
 midman
   .command('start')
-  .option('-s, --static <dir>', `Static file path. Should be absolute path. Default is ${config.staticPath}`)
+  .alias('s')
+  .description('Start server')
+  .option('-s, --static file dir <dir>', `Static file path. Should be absolute path. Default is ${config.staticPath}`)
   .option('-p, --port <port>', `Server port. Should be absolute path. Default is ${config.port}`)
   .action(lib.server)
+
 midman.parse(process.argv)
