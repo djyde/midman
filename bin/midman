@@ -1,10 +1,15 @@
 #!/usr/bin/env node
 
-const express = require('express')
-const app = express()
-
 const midman = require('commander')
+
+const lib = require('../lib')
 
 midman
   .version(require('../package.json').version)
-  .parse(process.argv)
+  .option('-p, --path [staticPath]', 'Static file path')
+
+// commands
+midman.command('start').action(lib.server.start)
+midman.command('restart').action(lib.server.restart)
+midman.command('stop').action(lib.server.stop)
+midman.parse(process.argv)
