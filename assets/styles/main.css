@@ -28,6 +28,8 @@ body{
   margin: 0 auto;
   .item{
     padding: .6em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
     &.even{
       background-color: #F2F2F2;
     }
@@ -35,6 +37,12 @@ body{
       font-weight: 600;
       text-decoration: none;
       color: #000;
+
+      &.btn{
+        float: right;
+        font-size: 14px;
+        font-weight: normal;
+      }
     }
   }
 }

@@ -457,6 +457,8 @@ body{
 
 #file-list .item{
   padding: .6em;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
 }
 
 #file-list .item.even{
@@ -467,4 +469,10 @@ body{
   font-weight: 600;
   text-decoration: none;
   color: #000;
+}
+
+#file-list .item a.btn{
+  float: right;
+  font-size: 14px;
+  font-weight: normal;
 }

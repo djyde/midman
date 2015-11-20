@@ -13,7 +13,8 @@ app.use(express.static(config.dir))
 app.get('/', (req,res) => {
 
   res.render('index', {
-    files: fs.readdirSync(config.dir)
+    files: fs.readdirSync(config.dir),
+    hostname: config.hostname
   })
 })
 
