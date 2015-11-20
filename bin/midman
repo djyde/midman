@@ -12,8 +12,5 @@ midman
   .command('start')
   .option('-s, --static <dir>', `Static file path. Should be absolute path. Default is ${config.staticPath}`)
   .option('-p, --port <port>', `Server port. Should be absolute path. Default is ${config.port}`)
-  .action(lib.server.start)
-
-midman.command('restart').action(lib.server.restart)
-midman.command('stop').action(lib.server.stop)
+  .action(lib.server)
 midman.parse(process.argv)
