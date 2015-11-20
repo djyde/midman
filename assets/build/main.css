@@ -422,3 +422,49 @@ td,
 th {
   padding: 0;
 }
+
+html{
+  font-family: 'Lantinghei SC', Helvetica, Arial, 'Hiragino Sans GB', 'STHeiti', 'WenQuanYi Micro Hei', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body{
+  padding-top: 2em;
+}
+
+.band{
+  margin: 0;
+  text-align: center;
+}
+
+#info{
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 2em;
+}
+
+#file-list{
+  width: 540px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+
+  #file-list {
+    width: 100%;
+  }
+}
+
+#file-list .item{
+  padding: .6em;
+}
+
+#file-list .item.even{
+  background-color: #F2F2F2;
+}
+
+#file-list .item a{
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+}
