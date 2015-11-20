@@ -1,0 +1,9 @@
+doctype html
+html
+  head
+    title Midman
+  body
+    ul
+      - for(var i in files)
+        li
+          a(href="#{ files[i] }") #{ files[i] }
