@@ -1,15 +1,19 @@
 #!/usr/bin/env node
 
 const midman = require('commander')
-
 const lib = require('../lib')
+const config = require('../config')
 
 midman
   .version(require('../package.json').version)
-  .option('-p, --path [staticPath]', 'Static file path')
 
 // commands
-midman.command('start').action(lib.server.start)
+midman
+  .command('start')
+  .option('-s, --static <dir>', `Static file path. Should be absolute path. Default is ${config.staticPath}`)
+  .option('-p, --port <port>', `Server port. Should be absolute path. Default is ${config.port}`)
+  .action(lib.server.start)
+
 midman.command('restart').action(lib.server.restart)
 midman.command('stop').action(lib.server.stop)
 midman.parse(process.argv)
