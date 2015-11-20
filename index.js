@@ -6,6 +6,8 @@ const config = require('./config')
 const fs = require('fs')
 
 app.set('view engine', 'jade')
+app.use('/assets', express.static('./assets'))
+
 app.use(express.static(config.dir))
 
 app.get('/', (req,res) => {
