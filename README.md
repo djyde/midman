@@ -2,6 +2,10 @@
 
 Midman is a tool for hosting static file on server.
 
+# Screenshot
+
+![](http://ww1.sinaimg.cn/large/62580dd9gw1ey8lqpj63dj20so0j040e.jpg)
+
 # Why use Midman
 
 I used to use VPS for transfering some files that was blocked. Then use `python -m SimpleHTTPServer <port>` for hosting these files. But `SimpleHTTPServer` is unstable. The Midman is a replacement. It's based on Node.js, make you could manage the server proccess with `PM2`.
