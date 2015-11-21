@@ -12,6 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/djyde/midman.git"
   },
+  "keyword": ["hosting","server","vps","transfer","gfw"],
   "author": "Randy Lu <randypriv@gmail.com>",
   "license": "MIT",
   "bugs": {
