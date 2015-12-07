@@ -28,7 +28,7 @@ $ git clone https://github.com/djyde/midman.git
 
 ```bash
 
-$ mkdir midman && npm install
+$ mkdir midman && cd midman && npm install midman
 
 ```
 
